@@ -219,13 +219,13 @@ button:hover {
     height: 50px;
 }
 
-.card:hover .hover-icon {
-    display: inline; /* Show the hover icon on hover */
+/* .card:hover .hover-icon {
+    display: inline; 
 }
 
 .card:hover .normal-icon {
-    display: none; /* Hide the normal icon on hover */
-}
+    display: none;
+} */
 
 
 
@@ -1675,13 +1675,6 @@ font-weight: 700;
 
 
 }
-
-
-
-
-
-
-
 
 
 

@@ -442,6 +442,11 @@ button:hover {
     margin-right: 10px;
 }
 
+.menu-type.active {
+    border-bottom: #FFA500 3px solid;
+}
+
+
 .menu-type:hover {
     border-bottom: #FFA500 3px solid;
 }
@@ -456,6 +461,8 @@ button:hover {
     flex-wrap: wrap; 
     justify-content: center;   
 }
+
+
 
 .menu-item {
     width: 45%;
@@ -547,17 +554,18 @@ justify-content: center;
     margin-bottom: 10px;
     column-gap: 7%;
     width: 100%;
-
+    overflow-x: hidden;
     
 }
 
 
-input[type="datetime-local"],
-textarea {
-    width: 100%; 
+
+.reservation-form textarea {
+    width: 95%; 
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 3px;
+    overflow-x: hidden;
 }
 
 
@@ -833,11 +841,30 @@ input[type="time"]:focus {
     background-color: white;
     transition: transform 0.3s ease;
     height: fit-content;
+    max-width: 850px;
 }
+
+/*display only first testimonial card*/
+.testimonial-card:nth-child(n+2) {
+    display: none;
+}
+
 
 .testimonial-card p {
     color: #666565;
     text-align: left;
+}
+
+
+.testimonial-card .testimonial-button button {
+    background-color: #FFA500;
+    color: white;
+    text-transform: none;
+    border: none;
+    width: fit-content;
+    cursor: pointer;
+    font-weight: 400;
+    border-radius: 5px;
 }
 
 .testimonial-card:hover {
@@ -847,18 +874,18 @@ input[type="time"]:focus {
 }
 
 .testimonial-symbol img.hover-icon {
-    display: none; /* Hide the hover icons by default */
+    display: none; 
 }
 
 .testimonial-card:hover .hover-icon {
-    display: inline; /* Show the hover icon on hover */
+    display: inline; 
 }
 
 .testimonial-card:hover .normal-icon {
-    display: none; /* Hide the normal icon on hover */
+    display: none; 
 }
 
-/*change text color on hover*/
+
 .testimonial-card:hover p {
     color: white;
 }
@@ -866,6 +893,16 @@ input[type="time"]:focus {
 .testimonial-card:hover h4 {
     color: white;
 }
+
+.testimonial-card:hover .testimonial-button button {
+    background-color: #ffffff;
+    color: #FFA500;
+}
+
+.testimonial-card:hover .testimonial-button button:hover {
+    box-shadow: #797773 0px 0px 10px;
+}
+
 
 
 
@@ -896,7 +933,7 @@ input[type="time"]:focus {
     align-self: center;
 }
 .client-name {
-    text-align: end;
+    text-align: start;
     width: 100%;
 }
 
@@ -1189,6 +1226,8 @@ font-weight: 700;
     background-color: #E59400; 
 }
 
+
+/*ninth div*/
 
 
 
@@ -1523,6 +1562,12 @@ font-weight: 700;
     .testimonial-card {
         width: 80%;
         margin-bottom: 20px;
+    }
+
+    .testimonial-card:hover {
+        transform: translateY(-10px);
+        background-color: #FFA500;
+        color: white;
     }
 
     .container {

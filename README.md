@@ -8,6 +8,8 @@ Minor fixes from week 2 submission:
 JavaScript Functionality
 - SVG Icon Toggle: This uses event listeners for mouseenter and mouseleave to switch between two images within the .card elements. Includes learning of DOM manipulation and event handling.
 - Form Submission: Using preventDefault to stop the form from submitting normally (stops page from refreshing). Submitted form data logged on console.
+- Testimonials Slider: This handles user interactions like hovering or clicking, and shows different testimonials dynamically.
+- Menu Toggle: Using event listeners and query selectors, this structure allows user to switch between breakfast, lunch, and dinner menus.
 
 
 JS learning so far:
